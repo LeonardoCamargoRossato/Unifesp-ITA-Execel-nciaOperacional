@@ -1,3 +1,3 @@
-# Agentes
+# Skills LCR
 
-Consultar AGENTS.md e normas canônicas. A distribuição oficial das skills LCR não foi localizada nesta execução; não simular instalação.
+Modelos oficiais nas subpastas skills. Instruções versionadas, não instalações automáticas na conta.
