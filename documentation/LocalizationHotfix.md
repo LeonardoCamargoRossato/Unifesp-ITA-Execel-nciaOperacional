@@ -1,0 +1,3 @@
+# Correção de idiomas
+
+Baseline: 00a116a9f2d66e521e31c9b09c897fb9208c4876. Escopo: seis rotas existentes, PT-BR inicial, EN-US completo. Sem ADR novo: correção localizada no layout e na arquitetura estática existente. Nenhuma alteração de permissões, links de acervo, backend ou dependências. Preferência local validada, sem dados pessoais. Nomes próprios, nomes de arquivos originais (identificados), marcas, DOI, Lean, identificadores técnicos e autodenominações do seletor são exceções intencionais. Derivados SVG registrados no inventário. A versão HTML estática é PT-BR; metadados e título são atualizados no cliente. O Quality Gate registra evidências por SHA; não presumir resultado antes de execução.

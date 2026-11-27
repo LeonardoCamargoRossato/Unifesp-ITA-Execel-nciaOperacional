@@ -7,7 +7,8 @@
     "page": "home",
     "rights": "Original",
     "approval": "Builder-created",
-    "access": "public"
+    "access": "public",
+    "locale": "pt-BR"
   },
   {
     "id": "author-profile",
@@ -26,6 +27,27 @@
     "format": "SVG",
     "page": "shared navigation",
     "rights": "Original",
+    "approval": "Builder-created",
+    "access": "public"
+  },
+  {
+    "id": "quantum-flow-en",
+    "path": "code/public/assets/home/QuantumFlowEnUs.svg",
+    "source": "Localized derivative of QuantumFlow.svg",
+    "format": "SVG",
+    "page": "home",
+    "rights": "Original",
+    "approval": "Builder-created",
+    "access": "public",
+    "locale": "en-US"
+  },
+  {
+    "id": "us-flag",
+    "path": "code/public/assets/branding/UsFlag.svg",
+    "source": "Original SVG of US flag",
+    "format": "SVG",
+    "page": "shared navigation",
+    "rights": "Original vector",
     "approval": "Builder-created",
     "access": "public"
   }

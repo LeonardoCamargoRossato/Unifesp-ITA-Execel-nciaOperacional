@@ -2,8 +2,8 @@
   "groups": [
     {
       "id": "article-project",
-      "label": "Projeto Artigo",
-      "order": 4
+      "order": 4,
+      "labelKey": "articleProject"
     }
   ],
   "pages": [
@@ -11,21 +11,21 @@
       "id": "home",
       "parentId": null,
       "order": 1,
-      "label": "Home",
       "route": "/",
       "page": "pages/home/HomePage.tsx",
       "assetIds": [
-        "quantum-flow"
+        "quantum-flow",
+        "quantum-flow-en"
       ],
       "aliases": [],
       "navigation": "top",
-      "assetException": null
+      "assetException": null,
+      "labelKey": "home"
     },
     {
       "id": "about-author",
       "parentId": null,
       "order": 2,
-      "label": "About Author",
       "route": "/about-author",
       "page": "pages/about-author/AboutAuthorPage.tsx",
       "assetIds": [
@@ -33,55 +33,56 @@
       ],
       "aliases": [],
       "navigation": "top",
-      "assetException": null
+      "assetException": null,
+      "labelKey": "about"
     },
     {
       "id": "learn-more",
       "parentId": null,
       "order": 3,
-      "label": "Saiba mais",
       "route": "/saiba-mais",
       "page": "pages/learn-more/LearnMorePage.tsx",
       "assetIds": [],
       "aliases": [],
       "navigation": "top",
-      "assetException": "Página textual sem raster próprio"
+      "assetException": "Página textual sem raster próprio",
+      "labelKey": "learn"
     },
     {
       "id": "article-overview",
       "parentId": "article-project",
       "order": 1,
-      "label": "Sobre o artigo",
       "route": "/projeto-artigo/sobre",
       "page": "pages/article-project/overview/ArticleOverviewPage.tsx",
       "assetIds": [],
       "aliases": [],
       "navigation": "side",
-      "assetException": "Página textual sem raster próprio"
+      "assetException": "Página textual sem raster próprio",
+      "labelKey": "overview"
     },
     {
       "id": "literature-review",
       "parentId": "article-project",
       "order": 2,
-      "label": "Revisão bibliográfica mínima",
       "route": "/projeto-artigo/revisao",
       "page": "pages/article-project/literature-review/LiteratureReviewPage.tsx",
       "assetIds": [],
       "aliases": [],
       "navigation": "side",
-      "assetException": "Página textual sem raster próprio"
+      "assetException": "Página textual sem raster próprio",
+      "labelKey": "review"
     },
     {
       "id": "article-inventory",
       "parentId": null,
       "order": 5,
-      "label": "Inventário de artigos",
       "route": "/inventario",
       "page": "pages/article-inventory/ArticleInventoryPage.tsx",
       "assetIds": [],
       "aliases": [],
       "navigation": "side",
-      "assetException": "Página textual sem raster próprio"
+      "assetException": "Página textual sem raster próprio",
+      "labelKey": "inventory"
     }
   ]
 }
