@@ -1,0 +1,3 @@
+export interface ArticleRecord {id:string;title:string;authors:string[];year:number;venue:string;doi:string;url:string;axis:string;keywords:string[];methodology:string;contributions:string;relevance:string;readingStatus:string;notes:string}
+export const records:ArticleRecord[]=[];
+export function filterRecords(items:ArticleRecord[],query:string,axis:string,order:'title'|'year'){const q=query.toLocaleLowerCase('pt-BR').trim();return items.filter(a=>(!axis||a.axis===axis)&&[a.title,a.authors.join(' '),a.doi,a.keywords.join(' ')].join(' ').toLocaleLowerCase('pt-BR').includes(q)).sort((a,b)=>order==='year'?b.year-a.year:a.title.localeCompare(b.title,'pt-BR'));}

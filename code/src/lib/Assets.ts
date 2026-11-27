@@ -1,0 +1,1 @@
+export const assets={quantum:import.meta.env.BASE_URL+'assets/home/QuantumFlow.svg',author:import.meta.env.BASE_URL+'assets/about-author/AuthorProfile.webp',flag:import.meta.env.BASE_URL+'assets/branding/BrazilFlag.svg'};
