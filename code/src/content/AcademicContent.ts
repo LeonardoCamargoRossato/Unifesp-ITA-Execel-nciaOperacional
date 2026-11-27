@@ -1,11 +1,64 @@
-export const site={title:'Excelência Operacional em Tecnologias Quânticas',subtitle:'Lean, inovação e melhoria contínua no desenvolvimento de tecnologias quânticas.',context:'Projeto de pesquisa — UNIFESP / ITA',author:'Leonardo Camargo Rossato',portfolio:'https://leonardocamargorossato.github.io/LCR-SolutionsArchitecture-IA-Quantum/#/',drive:'https://drive.google.com/drive/folders/1UDohv0RzNcS_G3y4deokoTb-zmjkUpkz'};
-export const lessons=[['Aula_01.pdf','Metodologia científica: delimitação da questão de pesquisa, tema e objetivos.'],['Aula_02.pdf','Cultura organizacional enxuta: desperdícios, Kaizen, estratégia, pessoas e processos.'],['Aula_03.pdf','Mapeamento de processos, entradas e saídas, identificação de desperdícios e gargalos.'],['Aula_04.pdf','Resolução de problemas com o PDCA: planejamento, execução, verificação e padronização.'],['Aula_05.pdf','Gestão e ferramentas da qualidade, melhoria contínua e evolução da qualidade.']];
-export const models=[['Temas_Pesquisa_Excelência.xlsx','Planilha de temas de pesquisa; acesso restrito.'],['Template_Artigo_Final.docx','Modelo de artigo científico e requisitos de composição.'],['Template_Seminário.pptx','Modelo visual do seminário em um slide.']];
-export const group2=[['Artigo Final_Lean Saúde.docx','Trabalho de terceiros sobre Lean na saúde digital; acesso restrito.'],['Modelo para a escrita do artigo metodologia_2024.docx','Modelo de escrita acadêmica em informática em saúde.'],['Plano de negócio sobre o desenvolvimento de um aplicativo para cuidado do idoso — Relato de experiência.pdf','Relato de experiência de desenvolvimento de aplicativo para cuidado do idoso.'],['Template_Artigo_Final duplicata.docx','Cópia do modelo de artigo; material complementar.']];
-export const deliverables=[{title:'Artigo científico',description:'Desenvolver pesquisa estruturada conforme o modelo de artigo.',model:'Template_Artigo_Final.docx',requirements:'Título até 12 palavras, resumo até 200, até 5 palavras-chave e até 3 objetivos específicos.',url:'https://drive.google.com/drive/folders/1d0ynoF8oLw5yHTj39ikiFPXm3a6H74sK'},{title:'Seminário',description:'Apresentar a pesquisa de forma sintética e visual.',model:'Template_Seminário.pptx',requirements:'Um slide; título de até 15 palavras, autoria completa.',url:'https://drive.google.com/drive/folders/1aA3ajoa3axsvR7A278WW8n5rbAFB1_5M'}];
-export const topic='Excelência Operacional aplicada ao desenvolvimento de tecnologias quânticas.';
-export const proposal='Aplicação de princípios Lean no desenvolvimento de tecnologias quânticas, buscando identificar desperdícios e oportunidades de melhoria nos processos de inovação tecnológica.';
-export const fields=['Contextualização','Problema de pesquisa','Questão de pesquisa','Objetivo geral','Objetivos específicos','Justificativa','Metodologia'];
-export const interests=['Tecnologias quânticas','Sistemas de navegação','Sensoriamento quântico','Excelência operacional','Gestão da inovação'];
-export const sections=[['Resumo','Até 200'],['Introdução','≈ 600'],['Referencial Bibliográfico','≈ 1.000'],['Materiais e Método de Pesquisa','≈ 600'],['Resultados e Análises','≈ 1.000'],['Considerações Finais','≈ 600'],['Referências Bibliográficas','Conforme necessário']];
-export const axes=[['Lean e Excelência Operacional','Princípios Lean, desperdícios, eficiência, fluxo de valor, Kaizen e melhoria contínua.'],['Gestão da inovação tecnológica','P&D, maturidade tecnológica e gestão de projetos científicos.'],['Tecnologias quânticas','Desafios experimentais, instrumentação e escalabilidade.'],['Sensoriamento e navegação quântica','Sensores, sistemas de navegação e desenvolvimento experimental.'],['Interseção entre Lean e pesquisa científica','Ferramentas de excelência operacional em pesquisa, engenharia e inovação.']];
+export const site={author:'Leonardo Camargo Rossato',portfolio:'https://leonardocamargorossato.github.io/LCR-SolutionsArchitecture-IA-Quantum/#/',drive:'https://drive.google.com/drive/folders/1UDohv0RzNcS_G3y4deokoTb-zmjkUpkz'};
+export const documents={
+  "lesson-01": "Aula_01.pdf",
+  "lesson-02": "Aula_02.pdf",
+  "lesson-03": "Aula_03.pdf",
+  "lesson-04": "Aula_04.pdf",
+  "lesson-05": "Aula_05.pdf",
+  "topics": "Temas_Pesquisa_Excelência.xlsx",
+  "article-template": "Template_Artigo_Final.docx",
+  "seminar-template": "Template_Seminário.pptx",
+  "health-article": "Artigo Final_Lean Saúde.docx",
+  "health-method": "Modelo para a escrita do artigo metodologia_2024.docx",
+  "health-app": "Plano de negócio sobre o desenvolvimento de um aplicativo para cuidado do idoso — Relato de experiência.pdf",
+  "duplicate-template": "Template_Artigo_Final duplicata.docx"
+} as const;
+export type DocumentId=keyof typeof documents;
+export const lessons=["lesson-01","lesson-02","lesson-03","lesson-04","lesson-05"] as const;
+export const models=["topics","article-template","seminar-template"] as const;
+export const group2=["health-article","health-method","health-app","duplicate-template"] as const;
+export const deliverables=[
+  {
+    "id": "article",
+    "model": "article-template",
+    "url": "https://drive.google.com/drive/folders/1d0ynoF8oLw5yHTj39ikiFPXm3a6H74sK"
+  },
+  {
+    "id": "seminar",
+    "model": "seminar-template",
+    "url": "https://drive.google.com/drive/folders/1aA3ajoa3axsvR7A278WW8n5rbAFB1_5M"
+  }
+] as const;
+export const fields=["context","problem","question","general","specific","justification","method"] as const;
+export const interests=["quantum","navigation","sensing","operations","innovation"] as const;
+export const sections=[
+  {
+    "id": "abstract",
+    "words": 200
+  },
+  {
+    "id": "introduction",
+    "words": 600
+  },
+  {
+    "id": "references-review",
+    "words": 1000
+  },
+  {
+    "id": "methods",
+    "words": 600
+  },
+  {
+    "id": "results",
+    "words": 1000
+  },
+  {
+    "id": "conclusions",
+    "words": 600
+  },
+  {
+    "id": "references",
+    "words": null
+  }
+] as const;
+export const axes=["lean","innovation","quantum","sensing","intersection"] as const;
