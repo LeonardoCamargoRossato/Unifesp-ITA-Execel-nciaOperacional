@@ -1,0 +1,3 @@
+# ADR-0001 — Arquitetura estática
+
+Data: 2026-11-27. Decisão: React + TypeScript + Vite, HashRouter, conteúdo local e implantação GitHub Pages, sem backend, OAuth ou armazenamento remoto. Alternativas: SPA com history routing (necessita fallback no host) e backend (complexidade desnecessária nesta fase). Consequências: rotas por hash permitem recarga direta; conteúdo do build é público; documentos ficam no Drive. A proposta tecnológica consta na especificação autorizada; a estratégia de hash é decisão do Builder. Validação pelo Quality Gate; publicação condicionada aos checks e configuração Pages.

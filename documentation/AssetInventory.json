@@ -1,0 +1,32 @@
+[
+  {
+    "id": "quantum-flow",
+    "path": "code/public/assets/home/QuantumFlow.svg",
+    "source": "Original vector created for this project",
+    "format": "SVG",
+    "page": "home",
+    "rights": "Original",
+    "approval": "Builder-created",
+    "access": "public"
+  },
+  {
+    "id": "author-profile",
+    "path": "code/public/assets/about-author/AuthorProfile.webp",
+    "source": "LeonardoCamargoRossato/LCR-SolutionsArchitecture-IA-Quantum/code/public/assets/about/profile/1792380122932-87ee4d65-cc32-4005-85d5-24fb6ed67957-fotoperfilLCR.webp",
+    "format": "WebP",
+    "page": "about-author; shared sidebar",
+    "rights": "Reuse authorized in project brief",
+    "approval": "Existing public portfolio asset",
+    "access": "public"
+  },
+  {
+    "id": "brazil-flag",
+    "path": "code/public/assets/branding/BrazilFlag.svg",
+    "source": "Original simplified vector",
+    "format": "SVG",
+    "page": "shared navigation",
+    "rights": "Original",
+    "approval": "Builder-created",
+    "access": "public"
+  }
+]

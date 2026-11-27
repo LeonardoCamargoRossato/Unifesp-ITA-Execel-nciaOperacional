@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {readFileSync} from 'node:fs';
+test('PSM and assets',()=>{execFileSync(process.execPath,[new URL('../scripts/ValidateStructure.mjs',import.meta.url).pathname])});
+test('no initial fabricated article records',()=>{const s=readFileSync(new URL('../src/lib/ArticleRecord.ts',import.meta.url),'utf8');assert.match(s,/records:ArticleRecord\[\]=\[\]/)});test('no remote asset/CDN in source catalog',()=>{const s=readFileSync(new URL('../src/lib/Assets.ts',import.meta.url),'utf8');assert.ok(!s.includes('https://'))});

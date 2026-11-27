@@ -1,0 +1,1 @@
+export const locale={id:'pt-BR',label:'Português (Brasil)',short:'PT-BR',loading:'Carregando página…',error:'Não foi possível carregar esta página.',empty:'O inventário bibliográfico será disponibilizado após a integração com a planilha de pesquisa.'};

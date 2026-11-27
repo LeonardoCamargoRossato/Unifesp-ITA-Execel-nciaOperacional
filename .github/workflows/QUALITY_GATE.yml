@@ -1,0 +1,28 @@
+name: Quality Gate
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: quality-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: code
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: code/package-lock.json
+      - run: npm ci
+      - run: npm run validate
+      - run: npm audit --audit-level=high
+      - run: node -e "const fs=require('fs'); const files=fs.readdirSync('dist/assets'); if(files.some(x=>/\\.(pdf|docx|xlsx|pptx|zip)$/i.test(x)))process.exit(1)"

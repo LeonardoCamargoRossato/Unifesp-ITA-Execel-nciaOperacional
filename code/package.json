@@ -1,0 +1,29 @@
+{
+  "name": "lcr-academic-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint scripts tests",
+    "test": "node --test tests/*.test.mjs",
+    "preview": "vite preview",
+    "validate": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.3.5",
+    "typescript": "~5.8.3",
+    "@types/node": "22.20.7",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "eslint": "^9.25.0"
+  }
+}
