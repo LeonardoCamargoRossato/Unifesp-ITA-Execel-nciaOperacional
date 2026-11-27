@@ -10,7 +10,8 @@
     "lint": "eslint scripts tests",
     "test": "node --test tests/*.test.mjs",
     "preview": "vite preview",
-    "validate": "npm run lint && npm run typecheck && npm test && npm run build"
+    "validate": "npm run lint && npm run typecheck && npm test && npm run build",
+    "e2e": "playwright test --config PlaywrightConfig.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -24,6 +25,7 @@
     "@types/node": "22.20.7",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "eslint": "^9.25.0"
+    "eslint": "^9.25.0",
+    "@playwright/test": "1.65.0"
   }
 }

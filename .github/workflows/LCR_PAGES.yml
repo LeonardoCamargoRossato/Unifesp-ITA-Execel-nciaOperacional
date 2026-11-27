@@ -2,7 +2,7 @@ name: Publish GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ['code/**', '.github/workflows/PAGES.yml']
+    paths: ['code/**', '.github/workflows/LCR_PAGES.yml']
   workflow_dispatch:
 permissions:
   contents: read
