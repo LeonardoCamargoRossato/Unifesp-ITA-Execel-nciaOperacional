@@ -1,7 +1,9 @@
-# tests
+# Tests
 
-Responsabilidade: Arquivos da camada indicada; preservar limites e validar alterações pelo Quality Gate.
-
-| Arquivo ou pasta | Descrição sucinta | Descrição detalhada |
+| Arquivo | Descrição sucinta | Descrição detalhada |
 | --- | --- | --- |
-| Structure.test.mjs | Arquivo da camada | Manter contrato e referências; verificar alterações com npm run validate. |
+| Structure.test.mjs | Estrutura | PSM, catálogo de assets, privacidade inicial. |
+| Localization.test.mjs | Paridade | Chaves, IDs, JSX, SVG e exigências estáveis. |
+| Navigation.spec.mjs | E2E | Seis rotas, idiomas, persistência, menus, 404 e capturas em três resoluções; rede externa bloqueada. |
+| test_lcr_naming.py | Nomenclatura | Teste oficial LCR. |
+| test_lcr_start.py | Inicialização | Teste oficial LCR. |
